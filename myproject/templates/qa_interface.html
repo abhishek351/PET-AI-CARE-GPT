@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering</title>
+    <link rel="stylesheet" type="text/css" href="qa_interface.css">
+</head>
+<body>
+    <h1>Question Answering Interface</h1>
+    <div class="qa-container">
+        <label for="context">Context:</label>
+        <textarea id="context" name="context" rows="4" cols="50"></textarea>
+        <label for="question">{{ question }}</label>
+        <input type="text" id="question" name="question">
+        <button id="submit">Submit</button>
+        <div class="answer">
+            <p>{{ answer }}</p>
+        </div>
+    </div>
+</body>
+</html>
