@@ -23,8 +23,8 @@ embeddings =  OpenAIEmbeddings()
 
 llm=OpenAI()
 
-prompt_template = """Use the following pieces of information to answer the user's question.
-If you don't know the answer, just say that you don't know, don't try to make up an answer.
+prompt_template = """Uses the following pieces of information to answer the user's question.
+If you don't know the answer, just say that you don't know, don't try to make up an answer. be strictly based on the context below.
 
 Context: {context}
 Question: {question}
